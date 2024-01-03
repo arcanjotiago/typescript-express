@@ -1,10 +1,9 @@
-export class responseNumber{
-    constructor(number:number, previousNumber:number, nextNumber:number){
-        this.number = number
-        this.previousNumber = previousNumber
-        this.nextNumber = nextNumber
+import { DefaltResponse } from "./DefaultResponse"
+
+export class ResponseNumber extends DefaltResponse{
+    constructor(message:any, status:string){
+        super()
+        this.status = status;
+        this.message = message;
     }
-    number: number
-    previousNumber:number
-    nextNumber: number
 }

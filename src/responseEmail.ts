@@ -1,15 +1,8 @@
-export class validatEmail{
-    constructor(email:string){
-        this.email = email;
-    }
-    email: string;
-
-    testMail(){
-        const regEx = new RegExp(/^[\a-z-\.]+@([\w-]+\.)+[\w-]{2,4}$/g);
-        
-        if(regEx.test(this.email)){
-            return {message: `The email informed is valid!`};
-          }
-          return {mesage: `The email informed is invalid. Try again!`};
-        }
+import { DefaltResponse } from "./DefaultResponse";
+export class responseMail extends DefaltResponse{
+    constructor(message:string, status:string){
+        super()
+        this.status = status;
+        this.message = message;
+    }  
 }
