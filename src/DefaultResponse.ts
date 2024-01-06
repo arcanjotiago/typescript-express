@@ -1,11 +1,8 @@
-//create class
 export class DefaltResponse{
-    // constructor(){
-    //     this.message;
-    //     this.status;
-    // }
+    constructor(message:any, status:number){
+        this.status = status;
+        this.message = message;
+    }
+    status:number;
     message:any;
-    status:any;
 }
-
-//Nome de classe sempre com letra maiuscula no inicio
