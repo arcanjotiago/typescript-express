@@ -10,8 +10,8 @@ app.listen(port, () => {
 })
 
 app.get('/status', (req: Request, res: Response) => {
-  let msgResponse = new DefaltResponse(`online`, 200)
-  res.send(msgResponse)
+  let msgResponse = new DefaltResponse(`online`, 200);
+  res.send(msgResponse);
 })
 
 
@@ -34,5 +34,5 @@ app.post('/ValidatEmail', (req: Request, res: Response) => {
       return res.json(emailResponse);
       }
     let emailResponse = new DefaltResponse(`The email informed is invalid. Try again!`, 400);
-    return res.json(emailResponse);
+    return res.status(400).json(emailResponse);
   })
