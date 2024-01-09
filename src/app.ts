@@ -36,3 +36,4 @@ app.post('/ValidatEmail', (req: Request, res: Response) => {
     let emailResponse = new DefaltResponse(`The email informed is invalid. Try again!`, 400);
     return res.status(400).json(emailResponse);
   })
+  //testing
