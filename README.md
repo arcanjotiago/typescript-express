@@ -4,7 +4,22 @@ This repository was created to add Typescript a Express Project. The original pr
 # Endpoints
 -`GET`  /status   
 -`POST` /calcnumber  
--`POST` /checkmail  
+-`POST` /checkmail
+
+## Requisition examples
+`POST` /calcnumber 
+```
+{
+    "number": 100
+}
+```
+
+`POST` /checkmail 
+```
+{
+    "Email": "examplE@gmail.com"
+}
+```
 
 # Installation
 ```
