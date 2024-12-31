@@ -1,5 +1,19 @@
-# typescript-express
+# Description
+This repository was created to add Typescript a Express Project. The original project is available on `https://github.com/arcanjotiago/express`. Additionaly in this project we stablish a standard response using the object orientation concept.
 
-The objective this project is working with type script + express using the app creating in project  "javascript-express".
+# Endpoints
+-`GET`  /status   
+-`POST` /calcnumber  
+-`POST` /checkmail  
 
-#In this project I stablishing standard for responses and I implementing the concept of object orietation utilizing class's
+# Installation
+```
+npm install
+```
+
+# Running the app
+## Development
+```
+npm run start:dev
+```
+
