@@ -27,7 +27,7 @@ app.post('/calcnumber', (req: Request, res: Response) => {
 
 app.post('/checkmail', (req: Request, res: Response) => {
   const regEx = new RegExp(/^[\a-z-\.]+@([\w-]+\.)+[\w-]{2,4}$/g);
-  const email = req.body.Email;
+  const email = req.body.email;
     
     if(regEx.test(email)){
       let emailResponse = new DefaltResponse(200, `The email informed is valid!`);
