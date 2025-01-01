@@ -9,16 +9,12 @@ This repository was created to add Typescript a Express Project. The original pr
 ## Requisition examples
 `POST` /calcnumber 
 ```
-{
-    "number": 100
-}
+curl --location --request POST 'http://localhost:3000/calcnumber?number=100'
 ```
 
 `POST` /checkmail 
 ```
-{
-    "Email": "examplE@gmail.com"
-}
+curl --location --request POST 'http://localhost:3000/checkmail?email=examplE%40example.com'
 ```
 
 # Installation

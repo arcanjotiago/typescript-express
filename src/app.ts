@@ -16,7 +16,7 @@ app.get('/status', (req: Request, res: Response) => {
 
 
 app.post('/calcnumber', (req: Request, res: Response) => {
-  const number = (req.body.number);
+  const number = Number(req.query.number);
   const previousNumber = (number - 1);
   const nextNumber = (number+1);
   const apiResponse = new DefaltResponse(200, { number, previousNumber, nextNumber})
@@ -27,7 +27,7 @@ app.post('/calcnumber', (req: Request, res: Response) => {
 
 app.post('/checkmail', (req: Request, res: Response) => {
   const regEx = new RegExp(/^[\a-z-\.]+@([\w-]+\.)+[\w-]{2,4}$/g);
-  const email = req.body.email;
+  const email:any = req.query.email;
     
     if(regEx.test(email)){
       let emailResponse = new DefaltResponse(200, `The email informed is valid!`);
